@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.PushupFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/purple_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_pushup"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/fav_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fav_icon"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineHorizontal33"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineVertical80" />
+
+        <ImageView
+            android:id="@+id/img_vertical_pushup"
+            android:layout_width="282dp"
+            android:layout_height="123dp"
+            android:src="@drawable/pushup_pic"
+            app:layout_constraintBottom_toBottomOf="@id/guidelineVertical40"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stars"
+            app:layout_constraintLeft_toRightOf="@id/star4"
+            app:layout_constraintRight_toRightOf="@id/guidelineVertical35"
+            app:layout_constraintTop_toBottomOf="@id/handstandPushup" />
+
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stars"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineVertical9"
+            app:layout_constraintTop_toBottomOf="@id/handstandPushup" />
+
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stars"
+            app:layout_constraintLeft_toRightOf="@id/star1"
+            app:layout_constraintRight_toLeftOf="@id/star3"
+            app:layout_constraintTop_toBottomOf="@id/handstandPushup" />
+
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stars"
+            app:layout_constraintLeft_toRightOf="@id/star2"
+            app:layout_constraintRight_toLeftOf="@id/star4"
+            app:layout_constraintTop_toBottomOf="@id/handstandPushup" />
+
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stars"
+            app:layout_constraintLeft_toRightOf="@id/star3"
+            app:layout_constraintRight_toLeftOf="@id/star5"
+            app:layout_constraintTop_toBottomOf="@id/handstandPushup" />
+
+        <ImageView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/comment"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineVertical9"
+            app:layout_constraintTop_toBottomOf="@id/textHandstand" />
+
+        <ImageView
+            android:id="@+id/thumbsup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/like"
+            app:layout_constraintLeft_toRightOf="@id/comment_number"
+            app:layout_constraintRight_toLeftOf="@id/like_number"
+            app:layout_constraintTop_toBottomOf="@id/textHandstand" />
+
+        <ImageView
+            android:id="@+id/usera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="62dp"
+            android:src="@drawable/usera_pushup"
+            app:layout_constraintRight_toRightOf="@id/guidelineVertical91"
+            app:layout_constraintTop_toBottomOf="@id/textHandstand" />
+
+        <ImageView
+            android:id="@+id/userb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/userb_pushup"
+            app:layout_constraintLeft_toRightOf="@id/guidelineVertical56"
+            app:layout_constraintRight_toRightOf="@id/guidelineVertical91"
+            app:layout_constraintTop_toBottomOf="@id/textHandstand" />
+
+        <ImageView
+            android:id="@+id/moreLike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:layout_marginTop="15.5dp"
+            android:src="@drawable/morelike_pushup"
+            app:layout_constraintRight_toRightOf="@id/guidelineVertical91"
+            app:layout_constraintTop_toBottomOf="@id/textHandstand" />
+
+        <TextView
+            android:id="@+id/handstandPushup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="Pushup"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineVertical9"
+            app:layout_constraintTop_toTopOf="@id/guidelineVertical40" />
+
+        <TextView
+            android:id="@+id/advanced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Advanced"
+            android:textColor="#000000"
+            app:layout_constraintRight_toLeftOf="@id/guidelineVertical56"
+            app:layout_constraintTop_toBottomOf="@id/handstandPushup" />
+
+
+        <TextView
+            android:id="@+id/textHandstand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-light"
+            android:text="The handstand push-up (press-up) - also called the vertical push-up (press-up) or the inverted push-up (press-up) &quot;commandos&quot;- is a type of push-up exercise where the body is positioned in a handstand. To prepare the strength until one has built adequate balance. "
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@id/guidelineVertical9"
+            app:layout_constraintRight_toRightOf="@id/guidelineVertical91"
+            app:layout_constraintTop_toBottomOf="@id/advanced" />
+
+        <TextView
+            android:id="@+id/comment_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="12"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toRightOf="@id/comment"
+            app:layout_constraintRight_toLeftOf="@id/thumbsup"
+            app:layout_constraintTop_toBottomOf="@id/textHandstand" />
+
+        <TextView
+            android:id="@+id/like_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="154"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toRightOf="@id/thumbsup"
+            app:layout_constraintRight_toRightOf="@id/guidelineVertical50"
+            app:layout_constraintTop_toBottomOf="@id/textHandstand" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5+"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@id/moreLike"
+            app:layout_constraintLeft_toLeftOf="@id/moreLike"
+            app:layout_constraintRight_toRightOf="@id/moreLike"
+            app:layout_constraintTop_toTopOf="@id/moreLike"
+            app:layout_constraintVertical_bias="0.476" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineHorizontal33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical80"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="230dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVertical91"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.91" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
